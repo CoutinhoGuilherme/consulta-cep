@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <aside>            
+
+            <form>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="var(--logo-color)" class="bi bi-box-seam" viewBox="0 0 16 16">
+                <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                </svg>
+
+                  <br>
+                  <br>
+
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" maxlength="9" id="cep" required>
+            
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro" disabled>
+                
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro" disabled>
+                
+                <label for="localidade">Localidade</label>
+                <input type="text" class="form-control" id="localidade" disabled>
+                
+                <label for="uf">UF</label>
+                <input type="text" class="form-control" id="uf" disabled>
+                    
+            </form>
+        </aside>
+        <main>
+
+            <div>
+                <img src="mapa.jpg" alt="mapa">
+            </div>
+
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
